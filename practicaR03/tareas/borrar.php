@@ -7,5 +7,5 @@ if(isset($_GET["id"])){
         setcookie("tareas",json_encode($tareas),time()+60*60*24*7);
     }
 }
-header("Location:index.php");
+header("Location:listar.php");
 ?>

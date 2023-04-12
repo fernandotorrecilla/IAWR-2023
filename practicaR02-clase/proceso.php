@@ -33,7 +33,7 @@ if(isset($_GET["pelicula1"]) &&
     }
 }
 
-header("Location:index.php");
+header("Location:listar.php");
 
 
 ?>
