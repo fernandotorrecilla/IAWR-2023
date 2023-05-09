@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p data-primero="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ea non reprehenderit! Ab
+    accusamus asperiores, aspernatur eveniet exercitationem nisi? A accusamus amet eaque hic maxime natus nihil, odit
+    omnis sint.</p>
+<p data-primero="true">Autem consequatur cumque ea illum maxime, nam non nostrum odit perspiciatis placeat praesentium
+    quam quasi quo sapiente sed vero voluptas voluptatem? At corporis delectus, labore laudantium possimus quia
+    similique sit.</p>
+<p data-primero="true">Error esse exercitationem magnam modi officia temporibus voluptatem voluptates! Ab aspernatur
+    doloremque nostrum numquam quisquam! Accusantium aut eius magnam maiores minima non quae quasi sunt tempore tenetur
+    velit, voluptas, voluptatum.</p>
+<p data-primero="true">Aspernatur aut beatae cum, dolor doloribus earum expedita ipsam, laudantium minima molestias
+    natus nemo voluptate voluptatum? Distinctio error maxime reprehenderit sequi. Atque deleniti deserunt ex minima
+    nesciunt porro quibusdam rerum?</p>
+<p data-primero="true">Accusantium adipisci aliquid, amet blanditiis commodi consequuntur dolorem ducimus earum enim eum
+    eveniet, excepturi explicabo harum illum inventore iure neque non nulla officiis possimus recusandae sequi sint sit
+    tempore ut!</p>
+<p data-primero="true">Ab dignissimos distinctio eaque eius enim eos esse est et facilis inventore ipsa maxime nam, nisi
+    odio odit perspiciatis quae, quasi reiciendis rerum soluta tempora totam veritatis, voluptas. Accusamus,
+    recusandae!</p>
+<p data-primero="true">At corporis ipsa libero molestias officia optio reiciendis totam. Assumenda expedita ipsam itaque
+    natus odit. Aperiam blanditiis debitis, eaque, harum iusto, nesciunt pariatur perferendis placeat provident quisquam
+    sit totam voluptatem.</p>
+<p data-primero="true">Consectetur molestias quam vitae voluptates. Commodi eligendi enim ipsum neque omnis quod ratione
+    ullam voluptates? At numquam similique vero voluptas voluptatum. Consectetur culpa delectus dolore dolorem eum
+    laborum mollitia nemo.</p>
+<p data-primero="true">Adipisci assumenda deleniti odio qui quia vel! Ab accusamus, aperiam atque autem dolor dolorem ea
+    eaque enim error esse et harum in magni officia quis quo rem soluta, suscipit voluptate.</p>
+<p data-primero="true">Animi asperiores consequuntur corporis culpa doloribus excepturi explicabo inventore laborum
+    maxime, nesciunt possimus ratione rem reprehenderit ullam velit? Aperiam asperiores beatae doloremque eaque id
+    molestiae perspiciatis! At consequuntur nesciunt officiis!</p>
+<p data-primero="true">Ab animi assumenda at commodi cum cupiditate dignissimos dolorem esse et harum, laudantium neque
+    odio qui quibusdam rem saepe tempore totam ullam. Debitis iusto laboriosam quidem ratione tenetur vel voluptate.</p>
+<p data-primero="true">Aperiam assumenda deleniti incidunt, iste, necessitatibus nobis, officiis pariatur praesentium
+    quaerat quam tenetur vel veniam! Adipisci architecto beatae corporis iure laborum, mollitia pariatur provident quod
+    recusandae sed velit vitae voluptatem!</p>
+<p data-primero="true">Animi consequatur culpa debitis distinctio doloremque dolores, exercitationem expedita incidunt
+    labore libero magnam minus modi natus nemo nostrum nulla obcaecati porro praesentium quis recusandae, repellendus
+    sint ullam vitae voluptatibus voluptatum?</p>
+<p data-primero="true">Atque aut debitis, facilis laudantium maxime quaerat repellat sint! Aliquam eveniet fuga
+    laudantium nesciunt porro recusandae temporibus tenetur, voluptate. Aspernatur et facilis harum illo labore officiis
+    quis similique tempore, temporibus.</p>
+<p data-primero="true">Ad aliquid beatae corporis dicta dolorem dolores eaque earum eveniet expedita facere illum
+    laboriosam libero, magni nam nisi, non nulla odio omnis quidem quo rem rerum tempore unde vel voluptates?</p>
+<p data-primero="true">A atque dolore doloremque eos explicabo in ratione repellat tenetur. Aperiam consequatur corporis
+    debitis doloribus, ea esse ipsa ipsum labore molestiae nobis quam quos rerum similique, sit velit vitae,
+    voluptates?</p>
+<p data-primero="true">Accusantium aliquam aliquid aperiam consequuntur eligendi excepturi exercitationem facilis
+    fugiat, incidunt ipsam ipsum magnam odit officiis omnis provident quia quis ratione rem repellat repudiandae rerum
+    sequi, sunt ut vel velit.</p>
+<p data-primero="true">Distinctio dolores iure laboriosam, obcaecati repudiandae rerum velit! Consequatur fugiat impedit
+    nostrum odit omnis possimus quibusdam repudiandae temporibus! Asperiores atque aut dolores fugiat hic molestias
+    obcaecati quod recusandae ut veniam.</p>
+<p data-primero="true">Architecto eum iste iusto neque ullam. Alias at cum laudantium molestias praesentium quia quo
+    quos recusandae sed voluptatibus. Accusamus aliquid cum distinctio earum et nisi nulla obcaecati quam, sunt
+    tenetur.</p>
+<p data-primero="true">Ad alias est, et eum molestias non qui sed! A, autem cupiditate distinctio dolore fuga hic omnis
+    qui quibusdam reprehenderit tenetur! Accusantium animi iure nobis odio possimus sapiente totam. Rerum?</p>
+<script>
+window.addEventListener("DOMContentLoaded",function(e){
+   //código que se lanza cuando la página está cargada
+    let parrafos=document.querySelectorAll("p"); //array
+    for(let parrafo of parrafos){
+        parrafo.addEventListener("click",function(e){
+            if(parrafo.dataset.primero=="true") {
+                parrafo.style.backgroundColor = "red";
+                parrafo.dataset.primero = "false";
+            }
+            else{
+                parrafo.style.backgroundColor = "transparent";
+                parrafo.dataset.primero = "true";
+            }
+        });
+    }
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form id="f1">
+    <input type="text" name="texto" id="texto"
+        placeholder="Escribe una palabra">
+    <button>Cambiar</button>
+</form>
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam animi culpa dignissimos eos et
+    eum exercitationem fugit hic id, libero, possimus quia quos repellat repudiandae sequi tempora ut! Deserunt.</p>
+<script>
+window.addEventListener("DOMContentLoaded",function(e){
+    let f1=document.getElementById("f1");//formulario
+    let texto=document.getElementById("texto");//input
+    let p1=document.getElementById("p1");
+
+    f1.addEventListener("submit",function(e){
+        e.preventDefault();
+        p1.innerHTML="<strong>"+texto.value+"</strong>";
+        texto.value="";
+    })
+})
+</script>
+</body>
+</html>
