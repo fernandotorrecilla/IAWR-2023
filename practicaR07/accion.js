@@ -3,7 +3,14 @@ window.addEventListener("DOMContentLoaded",function(e){
     let rojo=document.getElementById("rojo");
     let verde=document.getElementById("verde");
     let azul=document.getElementById("azul");
+    let tY=document.getElementById("y");
+    let tX=document.getElementById("x");
+    let tRotacion=document.getElementById("rotacion");
     let colores=document.querySelectorAll("#fondo input");//array
+    let mosca=document.querySelector(".mosca");
+    let btNuevo=document.getElementById("nuevo");
+
+    let moscas=document.querySelectorAll(".mosca");
 
     for(let color of colores){
         color.addEventListener("change",function(e){
@@ -20,9 +27,52 @@ window.addEventListener("DOMContentLoaded",function(e){
         });
     }
 
+    tY.addEventListener("change",function(e){
+      let y=tY.value;
+      mosca.style.top=y+"px";
+    });
+
+    tX.addEventListener("change",function(e){
+        let x=tX.value;
+        mosca.style.left=x+"px";
+    });
+
+    tRotacion.addEventListener("change",function(e){
+        let rotacion=tRotacion.value;
+        mosca.style.rotate=rotacion+"deg";
+    });
+
+    btNuevo.addEventListener("click",function(e){
+        let nuevaMosca=document.createElement("div");
+        nuevaMosca.classList.add("mosca");
+        nuevaMosca.classList.add("seleccionada");
+
+        nuevaMosca.addEventListener("click",function(e){
+            nuevaMosca.classList.add("seleccionada");
+            mosca.classList.remove("seleccionada");
+            mosca=nuevaMosca;
+        })
+
+
+        main.append(nuevaMosca);
+        mosca.classList.remove("seleccionada");
+        mosca=nuevaMosca;
+        tX.value=0;
+        tY.value=0;
+        tRotacion.value=0;
+    })
+
+    for(let mos of moscas){
+        mos.addEventListener("click",function(e){
+           mos.classList.add("seleccionada");
+           mosca.classList.remove("seleccionada");
+           mosca=mos;
+        });
+    }
+
 
     /*
-    CODIGO CORRECTO, PERO QUE ME CAPTUTA TRES EVENTOS
+    CODIGO CORRECTO, PERO QUE ME CAPTURA TRES EVENTOS
 
     let r=255;
     let g=255;

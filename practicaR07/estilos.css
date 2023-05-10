@@ -5,6 +5,7 @@ header{
     width:100%;
     height:100px;
     background-color: lightgray;
+    text-align: center;
 }
 main{
     position:fixed;
@@ -17,4 +18,18 @@ main{
 
 header div{
     display:inline-block;
+    margin-left:30px;
+}
+
+.mosca{
+    position:absolute;
+    width:80px;
+    height:80px;
+    background-image:url("fly.svg") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mosca.seleccionada{
+    background-image:url("fly2.svg") ;
 }
