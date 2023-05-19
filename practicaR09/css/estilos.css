@@ -1,0 +1,30 @@
+h1,h2{
+    text-align: center;
+}
+label{
+    text-align: left;
+}
+
+
+#errores h2, #errores p{
+    color: #da7676;
+}
+#nuevaCorrecta p{
+    color: #68ab68;
+}
+
+form button{
+    width:100%;
+}
+.reflexion{
+    border: 1px solid #000;
+    padding: 3px;
+    margin: 3px;
+}
+.reflexion p{
+    margin-bottom:3px;
+}
+
+.centro{
+    text-align: center;
+}
