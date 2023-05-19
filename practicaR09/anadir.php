@@ -10,8 +10,7 @@ if( isset($_POST["color"]) &&
     $color=$_POST["color"];
     $tipo=$_POST["tipo"];
     $texto=$_POST["texto"];
-    $tam=$_POST["texto"];
-
+    $tam=$_POST["tam"];
     try{
         $con=getConexion();
         $sql="INSERT INTO reflexiones(color,tipo,texto,tam) ".

@@ -36,7 +36,7 @@ include_once "conexion.php";
         while($st->fetch()){
             echo "<section class='row'>";
             echo "<div class='column reflexion'>";
-            echo "<p style='color:$color;font-size;$tam"."pt;font-family:$tipo'>$texto</p>";
+            echo "<p style='color:$color;font-size:$tam"."pt;font-family:$tipo'>$texto</p>";
             echo "<p class='centro'><a href='borrar.php?id=$id_reflexion'>Borrar</a></p>";
             echo "</div>";
             echo "</section>";
